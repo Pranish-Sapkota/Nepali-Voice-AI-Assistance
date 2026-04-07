@@ -5,7 +5,6 @@
 A production-grade, fully offline Voice AI system that understands Nepali (नेपाली) and English speech, generates intelligent responses via a local LLM, and speaks back — without a single paid API call.
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square)](https://python.org)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![Ollama](https://img.shields.io/badge/LLM-Ollama-orange?style=flat-square)](https://ollama.ai)
 [![Whisper](https://img.shields.io/badge/STT-faster--whisper-purple?style=flat-square)](https://github.com/guillaumekln/faster-whisper)
 [![FAISS](https://img.shields.io/badge/RAG-FAISS-red?style=flat-square)](https://github.com/facebookresearch/faiss)
@@ -56,7 +55,7 @@ A production-grade, fully offline Voice AI system that understands Nepali (न�
 ## 📁 Project Structure
 
 ```
-nepali_voice_ai/
+Nepali-Voice-AI-Assistance/
 │
 ├── app/
 │   ├── app.py              # Streamlit UI (main entry point)
@@ -98,8 +97,8 @@ nepali_voice_ai/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/nepali-voice-ai.git
-cd nepali-voice-ai
+git clone https://github.com/Pranish-Sapkota/Nepali-Voice-AI-Assistance.git
+cd Nepali-Voice-AI-Assistance
 ```
 
 ### 2. Run the setup script (Linux / macOS)
@@ -354,12 +353,6 @@ pip install TTS
 
 ---
 
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) file.
-
----
-
 ## 🙏 Acknowledgments
 
 - [faster-whisper](https://github.com/guillaumekln/faster-whisper) — CTranslate2-based Whisper
@@ -371,6 +364,10 @@ MIT License — see [LICENSE](LICENSE) file.
 
 ---
 
+If you found this project useful, please give it a ⭐ on GitHub!
+
+---
+
 <div align="center">
-  Made with ❤️ for Nepal 🇳🇵 · <strong>नेपाल जिन्दाबाद</strong>
+  Made with ❤️ by Pranish Pr Sapkota for  🇳🇵 · <strong>नेपाल जिन्दाबाद</strong>
 </div>
