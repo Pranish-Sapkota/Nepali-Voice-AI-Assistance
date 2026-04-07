@@ -1,0 +1,56 @@
+﻿# ══════════════════════════════════════════════════════════════
+# Nepali Voice AI — requirements.txt
+# Python 3.10+ required
+# Install: pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════════
+
+# ── Core UI ────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Speech Recognition ─────────────────────────────────────────
+faster-whisper>=1.0.0          # Whisper backend (CTranslate2-based)
+
+# ── Audio I/O ──────────────────────────────────────────────────
+sounddevice>=0.4.6             # Preferred audio backend
+numpy>=1.24.0                  # Required by sounddevice & faster-whisper
+
+# pyaudio is an alternative if sounddevice fails on your system:
+# pip install pyaudio
+# (requires portaudio: sudo apt install portaudio19-dev  /  brew install portaudio)
+
+# ── LLM (Ollama client) ────────────────────────────────────────
+requests>=2.31.0               # HTTP client for Ollama API
+
+# ── RAG: Embeddings ────────────────────────────────────────────
+sentence-transformers>=2.7.0   # Multilingual embeddings (Nepali+English)
+faiss-cpu>=1.8.0               # FAISS vector index (CPU version)
+# For GPU: pip install faiss-gpu  (requires CUDA toolkit)
+
+# ── RAG: Document parsing ──────────────────────────────────────
+pdfplumber>=0.11.0             # PDF text extraction (best quality)
+pypdf>=4.0.0                   # PDF fallback
+
+# ── Text-to-Speech ─────────────────────────────────────────────
+gTTS>=2.5.0                    # Google TTS (simple, needs internet)
+# Coqui TTS (fully offline, Nepali support):
+# pip install TTS              # Large install ~2 GB
+
+# Optional: system TTS fallback
+# pip install pyttsx3
+
+# ── Utilities ──────────────────────────────────────────────────
+psutil>=5.9.0                  # System info (RAM/CPU)
+python-dotenv>=1.0.0           # Environment variable management
+
+# ── GPU acceleration (optional) ────────────────────────────────
+# Uncomment the correct variant for your CUDA version:
+# torch>=2.1.0  (CPU only, auto-selected if CUDA not found)
+# torch>=2.1.0+cu121  --index-url https://download.pytorch.org/whl/cu121
+#   ↑ RTX 3050 with CUDA 12.1
+
+# CTranslate2 is installed as a dependency of faster-whisper.
+# For CUDA support: pip install ctranslate2  (CUDA wheel auto-selected)
+
+# ── Dev / testing ──────────────────────────────────────────────
+# pytest>=8.0.0
+# pytest-asyncio>=0.23.0

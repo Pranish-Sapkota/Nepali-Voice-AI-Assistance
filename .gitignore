@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+
+# Models (too large for git)
+models/
+*.bin
+*.pt
+*.gguf
+*.safetensors
+
+# Data & temp files
+data/
+*.wav
+*.mp3
+
+# FAISS index
+*.faiss
+*.pkl
+
+# Logs
+*.log
+logs/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+.venv
+
+
+
