@@ -29,7 +29,7 @@ data/
 logs/
 
 # Streamlit
-.streamlit/secrets.toml
+.streamlit
 
 # IDE
 .vscode/
